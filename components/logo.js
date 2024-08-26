@@ -33,7 +33,7 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
-          Takuya Matsuyama
+          Xia Jie Ou
         </Text>
       </LogoBox>
 
