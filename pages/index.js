@@ -15,6 +15,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
+import Timeline from '../components/Timeline' // Import the Timeline component
 
 const Home = () => (
   <Layout>
@@ -27,7 +28,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an developer based in New York!
+        Hello, I&apos;m a developer based in New York!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -35,7 +36,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Xia Jie Ou
           </Heading>
-          <p>Sophomore at CUNY College of Staten Island ( Aspiring Software Engineer / AI/ML Enthusiast / Hiker / Gamer )</p>
+          <p>Sophomore at CUNY College of Staten Island (Aspiring Software Engineer / AI/ML Enthusiast)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -54,7 +55,7 @@ const Home = () => (
             overflow="hidden"
           >
             <Image
-              src="/images/imgforsite.png"
+              src="/images/img.png"
               alt="Profile image"
               width="100"
               height="100"
@@ -65,13 +66,12 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Projects
         </Heading>
         <Paragraph>
-        Hi, I’m Xia Jie, I’ve been fascinated by technology since I was a kid and 
-        I want to learn and navigate towards making and contributing to ml/ai projects and hopefully make 
-        an impact towards that part of the industry. In my free time, I enjoy hiking, working out, spending time with friends, and playing tactical FPS games. {' '}
-          
+          Hi, I’m Xia Jie, I’ve been fascinated by technology since I was a kid and 
+          I want to learn and navigate towards making and contributing to ml/ai projects and hopefully make 
+          an impact towards that part of the industry. In my free time, I enjoy hiking, working out, spending time with friends, and playing tactical FPS games. {' '}
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -90,19 +90,8 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <BioSection>
-          <BioYear>2005</BioYear>
-          Born in Brooklyn, New York.
-        </BioSection>
-        <BioSection>
-          <BioYear>2023</BioYear>
-          Graduated from Curtis High School International Baccalaureate Program and Recipient of the Advanced Regent Diploma 
-        </BioSection>
-        <BioSection>
-          <BioYear>2024</BioYear>
-          Software Engineering Fellow at Headstarter AI
-        </BioSection>
-      
+        {/* Include the Timeline component here */}
+        <Timeline />
       </Section>
 
       <Section delay={0.3}>
