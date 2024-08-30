@@ -89,7 +89,7 @@ const Navbar = props => {
           </LinkItem> */}
           <LinkItem
             target="_blank"
-            href="https://drive.google.com/file/d/1mRLlkNehZcX1UjMEAsflwiobS3L01PBb/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1mRLlkNehZcX1UjMEAsflwiobS3L01PBb/view?usp=sharing"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -127,7 +127,7 @@ const Navbar = props => {
                 </MenuItem> */}
                 <MenuItem
                   as={Link}
-                  href="https://drive.google.com/file/d/1mRLlkNehZcX1UjMEAsflwiobS3L01PBb/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1mRLlkNehZcX1UjMEAsflwiobS3L01PBb/view?usp=sharing"
                 >
                   Resume
                 </MenuItem>
