@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbChatbot from '../public/images/chatbot.png'
+import thumbChatbot from '../public/images/betterchatbot.png'
 import thumbinv from '../public/images/inv.png'
 import thumbPort from '../public/images/firstport.png'
 import thumbFlash from '../public/images/flashcard.png'
