@@ -69,9 +69,9 @@ const Home = () => (
           Projects
         </Heading>
         <Paragraph>
-          Hi, I’m Xia Jie, I’ve been fascinated by technology since I was a kid and 
-          I want to learn and navigate towards making and contributing to ml/ai projects and hopefully make 
-          an impact towards that part of the industry. In my free time, I enjoy hiking, working out, spending time with friends, and playing tactical FPS games. {' '}
+        Hi, I’m Xia Jie. I’ve been fascinated by technology since I was a kid, and I’m eager to learn and contribute to ML/AI projects, with the goal of making a significant impact in the industry. In my free time, I enjoy hiking, working out, spending time with friends, and playing tactical FPS games.
+
+{' '}
         </Paragraph>
         <Box align="center" my={4}>
           <Button
