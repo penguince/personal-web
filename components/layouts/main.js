@@ -1,15 +1,7 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-
-// Removed the VoxelDogLoader import
-
-const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-  ssr: false,
-  // Removed the loading: () => <VoxelDogLoader />
-})
 
 const Main = ({ children, router }) => {
   return (
@@ -29,8 +21,7 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-        <LazyVoxelDog /> {/* This will now load directly without a spinner */}
-
+        {/* Removed the LazyVoxelDog component */}
         {children}
 
         <Footer />
