@@ -21,7 +21,7 @@ const timelineData = [
     color: "green.400"
   },
   {
-    year: "2027",
+    year: "2026",
     title: "College Graduation",
     description: "Expected to graduate with a degree in Computer Science.",
     color: "blue.400"
