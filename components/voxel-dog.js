@@ -116,7 +116,7 @@ const VoxelDog = () => {
 
   return (
     <div ref={refContainer} style={{ position: 'relative', width: '100%', height: '100%' }}>
-      {/* Remove the spinner check here */}
+      {/* Spinner has been removed */}
     </div>
   );
 }
