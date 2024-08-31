@@ -1,16 +1,5 @@
-import { forwardRef } from 'react'
-import { Box, Spinner } from '@chakra-ui/react'
-
-export const DogSpinner = () => (
-  <Spinner
-    size="xl"
-    position="absolute"
-    left="50%"
-    top="50%"
-    ml="calc(0px - var(--spinner-size) / 2)"
-    mt="calc(0px - var(--spinner-size))"
-  />
-)
+import { forwardRef } from 'react';
+import { Box } from '@chakra-ui/react';
 
 export const DogContainer = forwardRef(({ children }, ref) => (
   <Box
@@ -25,14 +14,14 @@ export const DogContainer = forwardRef(({ children }, ref) => (
   >
     {children}
   </Box>
-))
+));
 
 const Loader = () => {
   return (
     <DogContainer>
-      <DogSpinner />
+      {/* Remove the DogSpinner component here */}
     </DogContainer>
-  )
+  );
 }
 
-export default Loader
+export default Loader;
