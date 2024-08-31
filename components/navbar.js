@@ -18,7 +18,6 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 
-
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
@@ -89,7 +88,7 @@ const Navbar = props => {
           </LinkItem> */}
           <LinkItem
             target="_blank"
-            href="https://drive.google.com/file/d/1mRLlkNehZcX1UjMEAsflwiobS3L01PBb/view?usp=sharing"
+            href="https://drive.google.com/file/d/18J9E9HDS7UJNeTFnE1x-P7HZIEfzh4A3/view?usp=sharing"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -127,7 +126,7 @@ const Navbar = props => {
                 </MenuItem> */}
                 <MenuItem
                   as={Link}
-                  href="https://drive.google.com/file/d/1mRLlkNehZcX1UjMEAsflwiobS3L01PBb/view?usp=sharing"
+                  href="https://drive.google.com/file/d/18J9E9HDS7UJNeTFnE1x-P7HZIEfzh4A3/view?usp=sharing"
                 >
                   Resume
                 </MenuItem>
