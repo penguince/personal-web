@@ -9,7 +9,7 @@ const Footer = () => {
       fontSize={'sm'}
       color={'green.400'}  // Changed color to a brighter green
     >
-      Updated 8/25/2024
+      Updated 11/17/2024
     </Box>
   )
 }
