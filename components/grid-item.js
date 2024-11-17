@@ -24,7 +24,7 @@ export const WorkGridItem = ({
     </LinkBox>
   </Box>
 )
-
+   
 export const GridItemStyle = () => (
   <Global
     styles={`
