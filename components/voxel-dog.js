@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef, useCallback } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { loadGLTFModel } from '../lib/model';
@@ -9,9 +9,10 @@ function easeOutCirc(x) {
 
 const VoxelDog = () => {
   const refContainer = useRef();
-  const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb';
+  const urlDogGLB = 
+    (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') +
+    '/dog.glb';
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
@@ -72,7 +73,6 @@ const VoxelDog = () => {
         castShadow: false
       }).then(() => {
         animate();
-        setLoading(false);
       });
 
       let req = null;
@@ -105,7 +105,7 @@ const VoxelDog = () => {
         renderer.dispose();
       };
     }
-  }, []);
+  }, [urlDogGLB]);
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize, false);
@@ -119,6 +119,6 @@ const VoxelDog = () => {
       {/* Spinner has been removed */}
     </div>
   );
-}
+};
 
 export default VoxelDog;
